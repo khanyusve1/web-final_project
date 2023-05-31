@@ -1,0 +1,123 @@
+1 NF Lab (detail)
+	ID		Product    			Category     		qty		priceIN       priceOUT       amount     order      order_detail     invoice    invoice_detail
+	001		Dell E2011H			Monitor				20		120.00			40.00
+	002		Otiplex				Case				20		40.00			30.00
+	003		ATX12V				Power supply		20		40.00			15.00
+	004		Dell MS116			Mouse				20		17.00			2.00
+	005`	Black KB216			Keyboard			20		5.00			1.00
+	006		POSH Male			VGA cable			20		5.00			0.00
+	007		GENUINE Dell AE2	Headset				20		120.00			40.00
+	008		TL-SG1024D			Switch				20		300.00			150.00
+	009		RJ45				Ethernet			20		200.00			0.00
+	010		StarTech			power cord			20		6.00			0.00	
+	011		DDR2				RAM					20		57.00			40.00
+	012		D865GVHZ			Motherboard			20		80.00			40.00
+	013		Logi				Mouse pad			20		3.00			0.00
+	014		DVPSR210P			DVD					20		50.00			20.00
+	015		Rs 600				CD ROM				20		80.00			30.00
+	016		Toshiba				Hard disk			20		12.00			5.00
+	017		AMD					Processor			20		60.00			20.00
+	018		Blaster Audigy		Card Sound			20		7.00			3.00
+
+product_detail
+( proID 	ProName 			Cate 				QTY 	priceIN	 		priceOut 	amount )
+	001		Dell E2011H			Monitor				20		120.00			40.00
+	002		Otiplex				Case				20		40.00			30.00
+	003		ATX12V				Power supply		20		40.00			15.00
+	004		Dell MS116			Mouse				20		17.00			2.00
+	005`	Black KB216			Keyboard			20		5.00			1.00
+	006		POSH Male			VGA cable			20		5.00			0.00
+	007		GENUINE Dell AE2	Headset				20		120.00			40.00
+	008		TL-SG1024D			Switch				20		300.00			150.00
+	009		RJ45				Ethernet			20		200.00			0.00
+	010		StarTech			power cord			20		6.00			0.00	
+	011		DDR2				RAM					20		57.00			40.00
+	012		D865GVHZ			Motherboard			20		80.00			40.00
+	013		Logi				Mouse pad			20		3.00			0.00
+	014		DVPSR210P			DVD					20		50.00			20.00
+	015		Rs 600				CD ROM				20		80.00			30.00
+	016		Toshiba				Hard disk			20		12.00			5.00
+	017		AMD					Processor			20		60.00			20.00
+	018		Blaster Audigy		Card Sound			20		7.00			3.00
+
+
+
+2 NF 
+tbl_newstock
+
+	(proID	proName) 
+	001		Dell p907			
+	002		Asus90			
+	003		Ytx12V				
+	004		Dell nhf67			
+	005`	Blue HK98		
+
+
+
+
+tbl_oldstock
+
+	(proID	proName) 
+	001		Dell E2011H			
+	002		Otiplex				
+	003		ATX12V				
+	004		Dell MS116			
+	005`	Black KB216			
+	006		POSH Male			
+	007		GENUINE Dell AE2	
+	008		TL-SG1024D			
+	009		RJ45				
+	010		StarTech				
+	011		DDR2				
+	012		D865GVHZ			
+	013		Logi				
+	014		DVPSR210P			
+	015		Rs 600				
+	016		Toshiba				
+	017		AMD					
+	018		Blaster Audigy
+
+
+
+
+
+
+
+
+tbl_category 										tbl_proID
+	(catID       catName )
+	001			Dell E2011H			
+	002			Otiplex				
+	003			ATX12V				
+	004			Dell MS116			
+	005`		Black KB216			
+	006			POSH Male			
+	007			GENUINE Dell AE2	
+	008			TL-SG1024D			
+	009			RJ45				
+	010			StarTech				
+	011			DDR2				
+	012			D865GVHZ			
+	013			Logi				
+	014			DVPSR210P			
+	015			Rs 600				
+	016			Toshiba				
+	017			AMD					
+	018			Blaster Audigy
+
+
+
+
+
+
+tbl_selling
+
+	(exportID      export_model		importID     import_model)
+	001				Monitor			001				Monitor		
+	002				Case			002				Case	
+	003				Power supply	003				Power supply		
+	004				Mouse			004				Mouse	
+	005				Keyboard		005				Keyboard	
+	006				VGA cable		006				VGA cable	
+	007				Headset			007				Headset	
+	008				Switch			008				Switch

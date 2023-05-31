@@ -1,0 +1,44 @@
+body{
+    background-color:aqua;
+}
+
+
+
+.collapse{
+    color: aliceblue;
+}
+.nav-item{
+    color: aliceblue;
+}
+.color{
+    color: aliceblue;
+    background-color: blue;
+}
+
+.link-color:a{
+    color:white;
+    font-size: 30px;
+    
+}
+.align{
+    color: aliceblue;
+    margin-top: 2px;
+}
+.container{
+    margin-top: 20px;
+}
+.nav{
+    margin-right: 500px;
+}
+.d-block{
+    text-align: right;
+    -ms-text-kashida-space: 5px;
+}
+.navbar{
+    background-color: aqua;
+}
+
+
+.img{
+    background-image: url(Logo.png);
+}
